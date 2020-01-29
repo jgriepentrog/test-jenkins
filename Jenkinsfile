@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'zippadd/aws-serverless-node-docker:node12.13.0-r1'
-            label 'awsNodeContainer'
+            // label 'awsNodeContainer'
             // args  '-v /tmp:/tmp'
         }
     }
