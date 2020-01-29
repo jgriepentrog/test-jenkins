@@ -1,0 +1,23 @@
+{
+  "name": "test-jenkins",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx standard && npx jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgriepentrog/test-jenkins.git"
+  },
+  "author": "John Griepentrog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgriepentrog/test-jenkins/issues"
+  },
+  "homepage": "https://github.com/jgriepentrog/test-jenkins#readme",
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "standard": "^14.3.1"
+  }
+}
