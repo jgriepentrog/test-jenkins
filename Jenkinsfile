@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'zippadd/aws-serverless-node-docker:node12.13.0-r1'
+            image 'zippadd/aws-serverless-node-docker:node12.13.0-r3'
             // label 'awsNodeContainer'
             args '-u root'
         }
