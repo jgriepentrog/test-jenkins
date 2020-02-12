@@ -29,7 +29,7 @@ pipeline {
                 AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
             }
             steps {
-                echo 'Deploying.... jk'
+                sh 'terraform apply'
             }
         }
     }
