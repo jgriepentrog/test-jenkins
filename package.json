@@ -4,7 +4,9 @@
   "description": "Test",
   "main": "index.js",
   "scripts": {
-    "test": "npx standard && npx jest --coverage"
+    "test": "npx standard && npx jest --coverage",
+    "clearPackaged": "rm -Rf build/*",
+    "package": "npm run clearPackaged && for d in src/* ; do base=$(basename \"$d\") ; cd $d ; zip -r \"${base}.zip\" * ; mv \"${base}.zip\" ../../build/ ; cd .. ; cd .. ; done"
   },
   "repository": {
     "type": "git",
