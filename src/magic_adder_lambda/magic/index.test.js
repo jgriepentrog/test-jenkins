@@ -3,7 +3,7 @@ const {
   magic
 } = require('./index')
 
-describe('Test Suite 1', () => {
+describe('Test Return', () => {
   test('Ensure 42 is the magic', () => {
     expect.assertions(1)
     return expect(magic()).toEqual(42)
